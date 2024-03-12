@@ -103,24 +103,54 @@ main {
   align-items: center;
   justify-content: space-around;
   background-color: #252525;
-  height: 63vh;
+  min-height: 63vh;
 }
 
 .dev {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 40.889vh;
   height: 46.667vh;
 }
 
-.dev > div {
-  background-color: red;
-  width: 11.111vh;
-  height: 11.111vh;
+.devtitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.devtitle > h3 {
+  margin-left: 1.111vh;
+  font-size: 2.667vh;
+}
+
+.devtitle > img {
+  width: 3.333vh;
+  height: 3.333vh;
+}
+
+.devimages {
+  width: 40.889vh;
+  height: 40.889vh;
+}
+
+.devimages > img {
+  margin: 2vh;
+  width: 9.111vh;
+  height: 9.111vh;
 }
 
 .others {
   width: 77.778vh;
   height: 46.667vh;
+}
+
+.others > .design {
+  width: 100%;
+  height: 18.889vh;
 }
 
 footer {
