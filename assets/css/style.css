@@ -71,6 +71,7 @@ main {
 }
 
 .myname > h1 {
+  font-weight: 400;
   margin-left: 8%;
   border-left: 5px solid #933c97;
   padding: 10px;
@@ -93,6 +94,7 @@ main {
 }
 
 .titleskills > h2 {
+  font-weight: 400;
   margin-left: 4%;
   font-size: 4.444vh;
   border-bottom: 5px solid #933c97;
@@ -123,6 +125,7 @@ main {
 }
 
 .devtitle > h3 {
+  font-weight: 900;
   margin-left: 1.111vh;
   font-size: 2.667vh;
 }
@@ -144,6 +147,8 @@ main {
 }
 
 .others {
+  display: flex;
+  flex-direction: column;
   width: 77.778vh;
   height: 46.667vh;
 }
@@ -151,6 +156,47 @@ main {
 .others > .design {
   width: 100%;
   height: 18.889vh;
+}
+
+.designTitle {
+  margin-top: 1.111vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.designTitle > img {
+  margin-top: 0.111vh;
+  width: 4.444vh;
+  height: 3.333vh;
+}
+
+.designTitle > h3 {
+  font-weight: 900;
+  margin-left: 1.111vh;
+  font-size: 2.667vh;
+  width: fit-content;
+}
+
+.design > .designImages {
+  width: 100%;
+  height: 15.333vh;
+}
+
+.others > article {
+  display: flex;
+  width: 100%;
+  height: 27.889vh;
+}
+
+.tools {
+  width: 50%;
+  height: 27.889vh;
+}
+
+.knowledge {
+  width: 50%;
+  height: 27.889vh;
 }
 
 footer {
