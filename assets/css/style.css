@@ -179,8 +179,15 @@ main {
 }
 
 .design > .designImages {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 15.333vh;
+}
+
+.designImages > img {
+  width: 6.111vh;
+  height: 6.111vh;
 }
 
 .others > article {
