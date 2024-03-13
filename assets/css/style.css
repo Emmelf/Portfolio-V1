@@ -163,7 +163,6 @@ main {
 }
 
 .designTitle {
-  margin-top: 1.111vh;
   display: flex;
   align-items: center;
   width: 100%;
@@ -172,7 +171,7 @@ main {
 .designTitle > img {
   margin-top: 0.111vh;
   width: 4.444vh;
-  height: 2.633vh;
+  height: 5.633vh;
 }
 
 .designTitle > h3 {
@@ -272,7 +271,7 @@ main {
   height: 30.889vh;
   background-image: url(../img/gradient.png);
   background-size: cover;
-  border-radius: 3px;
+  border-radius: 0.5em;
   box-sizing: border-box;
   color: #fff;
   margin: 20px;
@@ -281,13 +280,27 @@ main {
 }
 
 .card > img {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
   width: 100%;
   height: 75%;
 }
 
-.card > button {
-  width: 16.667vh;
-  height: 4.444vh;
+.card > span {
+  border-radius: 0.41em;
+  height: 15%;
+  width: 30%;
+  text-decoration: none;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card > span:hover {
+  color: #191919;
+  background-color: white;
+  transition: all 0.5s ease;
 }
 
 .card:hover {
