@@ -183,7 +183,7 @@ main {
 
 .design > .designImages {
   display: flex;
-  align-items: center;
+  align-items: start;
   width: 100%;
   height: 15.333vh;
 }
