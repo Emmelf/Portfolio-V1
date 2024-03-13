@@ -12,4 +12,17 @@
   .skills {
     flex-direction: column;
   }
+  .titleskills {
+    align-items: center;
+    justify-content: center;
+  }
+  .titleprojects > h2 {
+    font-size: 3vh;
+  }
+  .designTitle > h3 {
+    font-size: 2vh;
+  }
+  .devtitle > h3 {
+    font-size: 2vh;
+  }
 }
