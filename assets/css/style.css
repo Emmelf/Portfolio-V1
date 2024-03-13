@@ -71,6 +71,7 @@ main {
 }
 
 .myname > h1 {
+  font-size: 4.444vh;
   font-weight: 400;
   margin-left: 8%;
   border-left: 5px solid #933c97;
@@ -186,8 +187,8 @@ main {
 }
 
 .designImages > img {
-  width: 6.111vh;
-  height: 6.111vh;
+  width: 7.111vh;
+  height: 7.111vh;
 }
 
 .others > article {
@@ -197,8 +198,38 @@ main {
 }
 
 .tools {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: 27.889vh;
+}
+
+.firstspan {
+  margin-top: 2vh;
+}
+
+.tools > span {
+  margin-left: 3vh;
+  display: flex;
+  align-items: center;
+}
+
+.tools > span > img {
+  margin-right: 1vh;
+  width: 3vh;
+  height: 3vh;
+}
+
+.knowledge > span {
+  margin-left: 3vh;
+  display: flex;
+  align-items: center;
+}
+
+.knowledge > span > img {
+  margin-right: 1vh;
+  width: 3vh;
+  height: 3vh;
 }
 
 .knowledge {
