@@ -108,3 +108,9 @@ let projets = document.querySelector(".titleprojects > h2");
 projets.addEventListener("selectstart", function (e) {
   e.preventDefault();
 });
+
+let competences = document.querySelector(".titleskills > h2");
+
+competences.addEventListener("selectstart", function (e) {
+  e.preventDefault();
+});

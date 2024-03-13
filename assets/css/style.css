@@ -95,7 +95,7 @@ main {
 }
 
 .titleskills > h2 {
-  font-weight: 400;
+  font-weight: 700;
   margin-left: 4%;
   font-size: 4.444vh;
   border-bottom: 5px solid #933c97;
@@ -122,6 +122,7 @@ main {
 }
 
 .titleprojects > h2 {
+  font-weight: 700;
   font-size: 4.444vh;
   border-bottom: 5px solid #933c97;
 }
@@ -224,7 +225,7 @@ footer {
   position: absolute;
   text-align: center;
   line-height: 50px;
-  background: #fff;
+  border: 2px solid #933c97;
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-50%);
@@ -234,9 +235,15 @@ footer {
   transform: translateY(-50%) scale(0.85);
 }
 .wrap i:first-child {
+  background-color: #933c97;
+  background-image: url(../img/arrow_left.svg);
+  background-size: cover;
   left: -22px;
 }
 .wrap i:last-child {
+  background-color: #933c97;
+  background-image: url(../img/arrow_right.svg);
+  background-size: cover;
   right: -14px;
 }
 .wrap .carousel {
