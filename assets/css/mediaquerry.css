@@ -11,18 +11,20 @@
   }
   .skills {
     flex-direction: column;
+    padding-left: 0%;
+    gap: 1vh;
   }
   .titleskills {
     align-items: center;
     justify-content: center;
   }
   .titleprojects > h2 {
-    font-size: 3vh;
+    font-size: 4.444vh;
   }
   .designTitle > h3 {
-    font-size: 2vh;
+    font-size: 3vh;
   }
   .devtitle > h3 {
-    font-size: 2vh;
+    font-size: 3vh;
   }
 }
