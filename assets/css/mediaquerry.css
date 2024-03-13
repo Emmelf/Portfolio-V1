@@ -33,3 +33,21 @@
     font-size: 3vh;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .wrap .carousel {
+    grid-auto-columns: calc((100% / 2) - 0.1vh);
+    padding: 0;
+  }
+  .wrap {
+    max-width: 100%;
+  }
+  .wrap i:last-child {
+    right: -22px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrap .carousel {
+    grid-auto-columns: 100%;
+  }
+}

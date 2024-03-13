@@ -104,139 +104,10 @@ main {
 .skills {
   display: flex;
   align-items: center;
-  justify-content: start;
-  padding-left: 3.2%;
-  gap: 10vh;
+  justify-content: center;
   background-color: #252525;
   min-height: 60vh;
   padding-bottom: 6vh;
-}
-
-.dev {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40.889vh;
-  height: 46.667vh;
-}
-
-.devtitle {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.devtitle > h3 {
-  font-weight: 900;
-  margin-left: 1.111vh;
-  font-size: 3.667vh;
-}
-
-.devtitle > img {
-  width: 3.333vh;
-  height: 3.333vh;
-}
-
-.devimages {
-  width: 40.889vh;
-  height: 40.889vh;
-}
-
-.devimages > img {
-  margin: 2vh;
-  width: 9.111vh;
-  height: 9.111vh;
-}
-
-.others {
-  display: flex;
-  flex-direction: column;
-  width: 77.778vh;
-  height: 46.667vh;
-}
-
-.others > .design {
-  width: 100%;
-  height: 18.889vh;
-}
-
-.designTitle {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.designTitle > img {
-  margin-top: 0.111vh;
-  width: 4.444vh;
-  height: 5.633vh;
-}
-
-.designTitle > h3 {
-  font-weight: 900;
-  margin-left: 1.111vh;
-  font-size: 3.667vh;
-  width: fit-content;
-}
-
-.design > .designImages {
-  display: flex;
-  align-items: start;
-  width: 100%;
-  height: 15.333vh;
-}
-
-.designImages > img {
-  width: 7.111vh;
-  height: 7.111vh;
-}
-
-.others > article {
-  display: flex;
-  width: 100%;
-  height: 27.889vh;
-}
-
-.tools {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 27.889vh;
-}
-
-.firstspan {
-  margin-top: 2vh;
-}
-
-.tools > span {
-  margin-left: 3vh;
-  display: flex;
-  align-items: center;
-}
-
-.tools > span > img {
-  margin-right: 1vh;
-  width: 3vh;
-  height: 3vh;
-}
-
-.knowledge > span {
-  margin-left: 3vh;
-  display: flex;
-  align-items: center;
-}
-
-.knowledge > span > img {
-  margin-right: 1vh;
-  width: 3vh;
-  height: 3vh;
-}
-
-.knowledge {
-  width: 50%;
-  height: 27.889vh;
 }
 
 .titleprojects {
@@ -338,4 +209,97 @@ footer {
   height: 7.778vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
+}
+
+.wrap {
+  width: 80%;
+  position: relative;
+}
+.wrap i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrap i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrap i:first-child {
+  left: -22px;
+}
+.wrap i:last-child {
+  right: -14px;
+}
+.wrap .carousel {
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 1.5vh);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .carte {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.carte, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .carte {
+  border: 4px solid #933c97;
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #191919;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .carte .img {
+  background: #191919;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.carte .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #933c97;
+}
+.carousel .carte h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .carte span {
+  color: #6a6d78;
+  font-size: 1.31rem;
 }
