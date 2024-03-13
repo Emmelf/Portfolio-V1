@@ -6,7 +6,8 @@
 
 @media only screen and (max-width: 1000px) {
   .others {
-    width: 100%;
+    margin: auto;
+    width: 80%;
   }
   .skills {
     flex-direction: column;
