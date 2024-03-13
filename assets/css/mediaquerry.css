@@ -50,4 +50,10 @@
   .wrap .carousel {
     grid-auto-columns: 100%;
   }
+  .wrap i:first-child {
+    background-color: #933c97;
+    background-image: url(../img/arrow_left.svg);
+    background-size: cover;
+    left: -22px;
+  }
 }
