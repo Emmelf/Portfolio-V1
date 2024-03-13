@@ -105,10 +105,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: start;
-  padding-left: 4%;
+  padding-left: 3.2%;
   gap: 10vh;
   background-color: #252525;
-  min-height: 63vh;
+  min-height: 60vh;
+  padding-bottom: 6vh;
 }
 
 .dev {
