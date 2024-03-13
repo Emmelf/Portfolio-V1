@@ -264,6 +264,10 @@ main {
   margin-bottom: 10vh;
 }
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
   width: 50vh;
   height: 30.889vh;
   background-image: url(../img/gradient.png);
@@ -279,6 +283,19 @@ main {
 .card > img {
   width: 100%;
   height: 75%;
+}
+
+.card > button {
+  width: 16.667vh;
+  height: 4.444vh;
+}
+
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.5s ease;
 }
 
 .contact {
@@ -300,6 +317,11 @@ main {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 7.778vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
