@@ -10,6 +10,11 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 h1,
 h2,
 h3,
@@ -32,6 +37,34 @@ nav {
   align-items: center;
   justify-content: space-between;
   color: white;
+}
+
+nav > a {
+  margin-right: 0.5%;
+}
+
+nav > a {
+  display: inline-block;
+
+  padding-bottom: 0.2em;
+  margin: 1em;
+  /*   border-radius: 5px; */
+  text-decoration: none;
+
+  /* Set up the hover */
+  /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+  background-image: linear-gradient(#933c97, #933c97),
+    linear-gradient(#1c00ff00, #1c00ff00);
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+
+nav > a:hover {
+  /* The following line makes the underline only as wide as the text */
+  /* background-size: calc(100% - 2em) 5px, auto; */
+  background-size: 100% 2px, auto;
 }
 
 nav > img {
@@ -181,7 +214,7 @@ main {
   border-left: 1px solid #191919;
 }
 
-.card > span {
+.cardButton {
   border-radius: 0.41em;
   height: 15%;
   width: 30%;
@@ -192,7 +225,7 @@ main {
   justify-content: center;
 }
 
-.card > span:hover {
+.cardButton:hover {
   color: #191919;
   background-color: white;
   transition: all 0.5s ease;
