@@ -329,6 +329,7 @@ footer {
   margin: 30px 0 5px;
 }
 .carousel .carte span {
+  text-align: center;
   color: #6a6d78;
   font-size: 1.31rem;
 }
