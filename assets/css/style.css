@@ -120,6 +120,7 @@ main {
 }
 
 .titleskills {
+  justify-content: center;
   display: flex;
   align-items: center;
   width: 100%;
@@ -129,7 +130,6 @@ main {
 
 .titleskills > h2 {
   font-weight: 700;
-  margin-left: 4%;
   font-size: 4.444vh;
   border-bottom: 5px solid #933c97;
 }
@@ -171,7 +171,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5vh;
+  gap: 0.2vh;
   width: 50vh;
   height: 30.889vh;
   background-image: url(../img/card-gradient.png);
@@ -186,11 +186,12 @@ main {
 }
 
 .card > img {
-  border: 3px solid #191919;
+  box-sizing: border-box;
+  border: 3px solid #1c00ff00;
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
   width: 100%;
-  height: 73%;
+  height: 82%;
 }
 
 .titlecard {
