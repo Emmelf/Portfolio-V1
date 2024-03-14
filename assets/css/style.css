@@ -165,7 +165,6 @@ main {
   align-items: center;
   justify-content: start;
   margin-left: auto;
-  margin-top: 1vh;
   position: absolute;
   height: 7vh;
   width: 50vh;
@@ -174,8 +173,8 @@ main {
 .titlecard > h4 {
   padding-left: 3%;
   background-color: #191919;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   padding-right: 5%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
